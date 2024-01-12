@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/food_stand"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/food_stand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <ImageView
+        android:id="@+id/delivery_man"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="232dp"
+        android:src="@drawable/delivery_guy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/featuresOfApp_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintTop_toBottomOf="@id/delivery_man"
+        tools:layout_editor_absoluteX="4dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

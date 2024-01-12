@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cardview"
+        android:background="@color/white"
+        android:layout_margin="4dp">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="42dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginVertical="16dp"
+                android:id="@+id/btn_facebook"
+                android:layout_width="350dp"
+                android:elevation="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_button_bottom_dialog_sheet"
+                android:backgroundTint="@color/white"
+                android:text="Continue with Facebook"
+                android:drawableLeft="@drawable/facebook"
+                android:paddingLeft="35dp"
+                android:textAllCaps="false"
+                android:textColor="@color/medium_gray"
+                android:textAlignment="center"
+                android:paddingRight="35dp"
+                android:textSize="18sp"
+                android:layout_margin="4dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_phone"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="22dp"
+                android:elevation="0dp"
+                android:background="@drawable/custom_button_bottom_dialog_sheet"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/call"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Continue with Phone Number"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/medium_gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+

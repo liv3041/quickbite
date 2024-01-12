@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuickBite" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="CustomOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="boxStrokeColor">@color/transparent</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+    <style name="CustomOutlinedBox_Focused" parent="CustomOutlinedBox">
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+    <style name="CounterStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/medium_gray</item>
+        <!--other parameters that you want to change -->
+    </style>
+
+    <style name="Theme.QuickBite" parent="Base.Theme.QuickBite" />
+</resources>
