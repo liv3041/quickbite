@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "QuickBite"
 include(":app")
 include(":auth")
+include(":users")

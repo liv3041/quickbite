@@ -8,6 +8,9 @@
       <entry key="auth">
         <State />
       </entry>
+      <entry key="users">
+        <State />
+      </entry>
     </value>
   </component>
 </project>

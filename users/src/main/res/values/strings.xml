@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">users</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="burger">Burger</string>
+    <string name="_5_0">5.0</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="_100_for_one">100 for one</string>
+    <string name="_40_50_min">40-50 min</string>
+    <string name="_15_5km">15.5km</string>
+</resources>

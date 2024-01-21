@@ -1,5 +1,6 @@
 package com.example.auth
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -7,13 +8,20 @@ import android.widget.ViewFlipper
 import androidx.appcompat.widget.AppCompatButton
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import com.example.users.NavigationActivity
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.button.MaterialButton
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        val buttonLogin : MaterialButton = findViewById(R.id.btn_login)
 
+
+        buttonLogin.setOnClickListener {
+            startActivity(Intent(this, NavigationActivity::class.java))
+        }
         //      transparent status bar
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
