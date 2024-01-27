@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class RestaurantItemAdapter(private val context: Context,private val restaurantItemList: ArrayList<RestaurantItem>):
 RecyclerView.Adapter<RestaurantItemAdapter.ViewHolder>(){
+
+     private var  onClickListener:OnClickListener? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantItemAdapter.ViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.restaurant_items_rv, parent, false)
         return ViewHolder(view)
@@ -18,6 +20,15 @@ RecyclerView.Adapter<RestaurantItemAdapter.ViewHolder>(){
     override fun onBindViewHolder(holder: RestaurantItemAdapter.ViewHolder, position: Int) {
         val restaurantItem = restaurantItemList[position]
         holder.bind(restaurantItem)
+
+        holder.itemView.setOnClickListener{
+            if(onClickListener!=null){
+                onClickListener!!.onClick(position,restaurantItem)
+            }
+
+
+
+        }
     }
 
     override fun getItemCount(): Int {
@@ -42,6 +53,16 @@ RecyclerView.Adapter<RestaurantItemAdapter.ViewHolder>(){
             distanceInKm.text = restaurantItem.getDistanceInKm()
             restaurantImage.setImageResource(restaurantItem.getRestaurantImage())
         }
+    }
+
+    fun setItemClickListener(onClickListener: OnClickListener){
+        this.onClickListener = onClickListener
+    }
+
+
+
+    interface OnClickListener{
+        fun onClick(position: Int,model:RestaurantItem)
     }
 
 }

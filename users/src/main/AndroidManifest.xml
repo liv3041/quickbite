@@ -6,9 +6,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuickBite">
         <activity
+            android:name=".RestaurantDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".NavigationActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

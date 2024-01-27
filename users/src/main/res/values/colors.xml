@@ -18,4 +18,11 @@
     <color name="very_light_orange">#FFCB91</color>
     <color name="blue_grey">#546E7A</color>
     <color name="green">#65B741</color>
+    <color name="medium_blue">#3498db</color>
+    <color name="deep_blue">#00578A</color>
+    <color name="orange_red">#FD5900</color>
+    <color name="charcoal_black">#333333</color>
+    <color name="dark_grayish_blue">#292D32</color>
+    <color name="semi_transparent_dark_grayish_blue">#292D3240</color>
+    <color name="deep_navy_blue">#1E2959</color>
 </resources>
