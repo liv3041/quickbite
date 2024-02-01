@@ -53,7 +53,7 @@
                 android:layout_width="40dp"
                 android:layout_height="20dp"
                 android:elevation="0dp"
-                android:layout_gravity="center_vertical| right"
+                android:layout_gravity="center_vertical|right"
                 android:orientation="horizontal"
                 android:layout_marginStart="190dp"
                 app:cardBackgroundColor="@color/green"
@@ -105,7 +105,23 @@
                 android:layout_height="5dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="5dp"
-
+                android:src="@drawable/circle" />
+            <TextView
+                android:id="@+id/popularFoodItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="French Fries"
+                android:layout_marginStart="12dp"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/blue_grey"
+                android:fontFamily="@font/average_sans"
+                android:letterSpacing="0.05"/>
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
                 android:src="@drawable/circle" />
             <TextView
                 android:id="@+id/pricingForOne"

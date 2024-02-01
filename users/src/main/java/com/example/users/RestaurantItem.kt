@@ -7,6 +7,7 @@ class RestaurantItem(
     private var restaurantImage:Int,
     private var ratings:String,
     private var popularFoodItem:String,
+    private var popularFoodItem2:String,
     private var pricingForOne:String,
     private var distanceFromUser:String,
     private var distanceInKm:String
@@ -32,7 +33,14 @@ class RestaurantItem(
     fun getPopularFoodItem():String{
         return popularFoodItem
     }
+
     fun setPopularFoodItem(popularFood:String){
+        this.popularFoodItem = popularFood
+    }
+    fun getPopularFoodItem2():String{
+        return popularFoodItem
+    }
+    fun setPopularFoodItem2(popularFood:String){
         this.popularFoodItem = popularFood
     }
     fun getPricing():String{

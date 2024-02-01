@@ -53,6 +53,13 @@ class HomeFragment : Fragment() {
         restaurantItemAdapter.setItemClickListener(object : RestaurantItemAdapter.OnClickListener {
             override fun onClick(position: Int, model: RestaurantItem) {
                 val intent:Intent = Intent(activity,RestaurantDetailsActivity::class.java)
+                intent.putExtra("Restaurant Name",model.getRestaurantName())
+                intent.putExtra("Restaurant Rating",model.getRatings())
+                intent.putExtra("Restaurant Cuisine",model.getPopularFoodItem())
+                intent.putExtra("Restaurant Cuisine2",model.getPopularFoodItem2())
+                intent.putExtra("Restaurant Price",model.getPricing())
+                intent.putExtra("Restaurant Delivery Time",model.getDistanceFromUser())
+                intent.putExtra("Restaurant Distance", model.getDistanceInKm())
                 startActivity(intent)
             }
         })
@@ -136,12 +143,12 @@ class HomeFragment : Fragment() {
     private fun setUpRestaurantItem(view: View) {
         restaurantItem = view.findViewById(R.id.restaurantItems_rv)
         restaurantItemList = ArrayList()
-        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","100 for one","40-50 min","15.5 km"))
-        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","100 for one","40-50 min","15.5 km"))
-        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","100 for one","40-50 min","15.5 km"))
-        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","100 for one","40-50 min","15.5 km"))
-        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","100 for one" ,"40-50 min","15.5 km"))
-        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","100 for one","40-50 min","15.5 km"))
+        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","French Fries","100 for one","40-50 min","15.5 km"))
+        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","French Fries","100 for one","40-50 min","15.5 km"))
+        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","French Fries","100 for one","40-50 min","15.5 km"))
+        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","French Fries","100 for one","40-50 min","15.5 km"))
+        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","French Fries","100 for one" ,"40-50 min","15.5 km"))
+        restaurantItemList.add(RestaurantItem("Burger King",R.drawable.burg,"4.0","Burger","French Fries","100 for one","40-50 min","15.5 km"))
 
         restaurantAdapter = RestaurantItemAdapter(requireContext(),restaurantItemList)
         restaurantItem.isNestedScrollingEnabled = false

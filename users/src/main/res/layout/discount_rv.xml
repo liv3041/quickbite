@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+    android:layout_marginTop="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="false"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        android:background="@drawable/discount_bg_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Your content goes here -->
+
+        <TextView
+            android:id="@+id/discountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FLAT ₹100 OFF"
+            android:textColor="@color/charcoal_black"
+            android:fontFamily="@font/average_sans"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/discountDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use code GET100 | above ₹549"
+            android:textColor="@color/medium_gray"
+            android:fontFamily="@font/average_sans"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/discountImage"
+        android:layout_width="43dp"
+        android:layout_height="29dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/discount_qb"
+        android:translationZ="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
